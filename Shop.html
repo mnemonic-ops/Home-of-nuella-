@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Home of Nuella</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="shop.css">
+    
+</head>
+<body>
+    <a href="https://wa.me/" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.738 5.488 2.025 7.788L0 32l8.412-2.025A15.927 15.927 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.15 22.775c-.35.975-1.738 1.788-2.838 2.025-.75.163-1.725.288-5.013-1.075-4.2-1.738-6.9-6-7.113-6.275-.2-.275-1.65-2.2-1.65-4.2s1.05-2.975 1.425-3.387c.375-.412.825-.513 1.1-.513.275 0 .55.012.787.025.263.012.612-.1.963.738.35.85 1.2 2.925 1.313 3.137.112.212.187.463.037.738-.15.275-.225.45-.45.7-.225.25-.475.55-.675.738-.225.212-.45.45-.2.875.25.412 1.113 1.837 2.388 2.975 1.637 1.463 3.012 1.913 3.45 2.138.438.225.7.187.963-.113.263-.3 1.125-1.312 1.425-1.762.3-.45.6-.375.975-.225.375.15 2.387 1.125 2.8 1.325.412.2.687.3.787.463.1.162.1.937-.25 1.912z"/>
+        </svg>
+    </a>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <img class="logo" src="./img/20260223_125552_0000.png" style="width: 90px; height: 90px; border-radius: 100px; " alt="">
+                <a href="index.html" class="logo" style="margin-right: 80px;">Home of Nuella</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="events.html">Event Decoration</a></li>
+                    <li><a href="surprises.html">Surprise Planning</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="cart-icon" id="cartToggle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="shop-hero">
+        <div class="container">
+            <h1>Our Luxury Collection</h1>
+            <p>Discover elegance in every creation</p>
+        </div>
+    </section>
+
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-filters">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="diffusers">Luxury Diffusers</button>
+                <button class="filter-btn" data-filter="cakes">Custom Cakes</button>
+                <button class="filter-btn" data-filter="candles">Scented candles</button>
+            </div>
+
+
+            <div id="diffusers" class="product-category">
+                <div class="category-header">
+                    <h2>Luxury Diffusers</h2>
+                    <p>Transform your space with our exquisite scent collection</p>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card" data-category="diffusers">
+                        <div class="product-image"> <img src="./img/monique-lhuillier-diffuser-garden-rose-l.jpg" alt=""><div class="placeholder-image">
+                            </div></div>
+                        <div class="product-info">
+                            <h3>Rose Garden</h3>
+                            <p class="product-desc">Delicate rose petals with hints of jasmine and vanilla</p>
+                            <div class="product-rating">★★★★★ <span>(45 reviews)</span></div>
+                            <p class="product-price">₦ <span class="editable-price">[Price]</span></p>
+                            <button class="btn btn-primary add-to-cart" data-product='{"id":"diff1","name":"Rose Garden Diffuser","price":0}'>Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="diffusers">
+                        <div class="product-image"><div class="placeholder-image">Nuella secret Diffuser</div></div>
+                        <div class="product-info">
+                            <h3>Nuella secret Diffuser</h3>
+                            <p class="product-desc">Delicate rose petals with hints of jasmine and vanilla</p>
+                            <div class="product-rating">★★★★★ <span>(45 reviews)</span></div>
+                            <p class="product-price">₦ <span class="editable-price">[Price]</span></p>
+                            <button class="btn btn-primary add-to-cart" data-product='{"id":"diff2","name":"Rose Garden Diffuser","price":0}'>Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="diffusers">
+                        <div class="product-image"> <img src="./img/17041h_1_1200x1200.webp" alt="">
+                            <div class="placeholder-image"></div></div>
+                        <div class="product-info">
+                            <h3 style="margin-top: 40px;">Ocean Breeze</h3>
+                            <p style="margin-bottom: 10px;" class="product-desc">Fresh aquatic notes with sea salt and coastal flowers</p>
+                            <div class="product-rating">★★★★★ <span>(38 reviews)</span></div>
+                            <p class="product-price">₦ <span class="editable-price">[Price]</span></p>
+                            <button class="btn btn-primary add-to-cart" data-product='{"id":"diff3","name":"Ocean Breeze Diffuser","price":0}'>Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="diffusers">
+                        <div class="product-image">
+                            <img src="./img/dream-catcher-lavender-reed-diffuser-aery-living-04_1200x1700_83b97965-ef69-458c-a9e0-0cdbcc956449_800x.jpg" alt=""><div class="placeholder-image"></div></div>
+                        <div class="product-info">
+                            <h3 style="margin-top: 40px;">Lavender Dreams</h3>
+                            <p class="product-desc">Calming lavender fields with chamomile and sage</p>
+                            <div class="product-rating">★★★★★ <span>(52 reviews)</span></div>
+                            <p class="product-price">₦ <span class="editable-price">[Price]</span></p>
+                            <button class="btn btn-primary add-to-cart" data-product='{"id":"diff4","name":"Lavender Dreams Diffuser","price":0}'>Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="diffusers">
+                        <div class="product-image">
+                           <img src="./img/accessories_jpg.webp" alt=""> <div class="placeholder-image"></div></div>
+                        <div class="product-info">
+                            <h3>Amber Luxury</h3>
+                            <p class="product-desc">Warm amber with notes of sandalwood and musk</p>
+                            <div class="product-rating">★★★★★ <span>(41 reviews)</span></div>
+                            <p class="product-price">₦ <span class="editable-price">[Price]</span></p>
+                            <button class="btn btn-primary add-to-cart" data-product='{"id":"diff5","name":"Amber Luxury Diffuser","price":0}'>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div id="candles" class="product-category">
+                <div class="category-header">
+                    <h2>Scented Candles</h2>
+                    <p>Transform your space with our exquisite scent collection</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card" data-category="candles">
+                        <div class="product-image">
+                            <div class="placeholder-image">Nuella Secrets</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Nuella Secret</h3>
+                            <p class="product-desc">Delicate rose petals with hints of jasmine and vanilla</p>
+                            <div class="product-rating">★★★★★ <span>(45 reviews)</span></div>
+                            <p class="product-price">₦ <span class="editable-price">[Price]</span></p>
+                            <button class="btn btn-primary add-to-cart" data-product='{"id":"cand1","name":"Nuella secret diffuser","price":0}'>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+</div>
+            <div id="cakes" class="product-category">
+                <div class="category-header">
+                    <h2>Custom Cakes</h2>
+                    <p>Bespoke creations tailored to your celebration</p>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card" data-category="cakes">
+                        <div class="product-image">
+                           <img src="./img/red-velvet-cake-3-600x750.jpg" style="width: 100%; height: 330px; object-fit: cover; object-position: top;" alt=""> <div class="placeholder-image"></div></div>
+                        <div class="product-info">
+                            <h3>Red Velvet Elegance</h3>
+                            <p class="product-desc">Classic red velvet with cream cheese frosting</p>
+                            <div class="cake-sizes">
+                                <span class="size-badge">6" | 8" | 10"</span>
+                            </div>
+                            <div class="product-rating">★★★★★ <span>(67 reviews)</span></div>
+                            <p class="product-price">₦ <span class="editable-price">[Price]</span></p>
+                            <button class="btn btn-primary add-to-cart" data-product='{"id":"cake1","name":"Red Velvet Elegance Cake","price":0}'>Order Custom</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="cakes">
+                        <div class="product-image">
+                            <img src="./img/chocolate cake.jpg" style="width: 100%; height: 360px; object-fit: cover; object-position: top;" alt="">
+                            <div class="placeholder-image"></div></div>
+                        <div class="product-info">
+                            <h3 style="margin-top: 40px;">Chocolate Paradise</h3>
+                            <p class="product-desc">Rich dark chocolate layers with ganache</p>
+                            <div class="cake-sizes">
+                                <span class="size-badge">6" | 8" | 10"</span>
+                            </div>
+                            <div class="product-rating">★★★★★ <span>(89 reviews)</span></div>
+                            <p class="product-price">₦ <span class="editable-price">[Price]</span></p>
+                            <button class="btn btn-primary add-to-cart" data-product='{"id":"cake2","name":"Chocolate Paradise Cake","price":0}'>Order Custom</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="cakes">
+                        <div class="product-image">
+                            <img src="./img/VanillaVanillaCake-32.webp" alt="">
+                            <div class="placeholder-image"></div></div>
+                        <div class="product-info">
+                            <h3>Vanilla Rose Romance</h3>
+                            <p class="product-desc">Delicate vanilla with rose buttercream</p>
+                            <div class="cake-sizes">
+                                <span class="size-badge">6" | 8" | 10"</span>
+                            </div>
+                            <div class="product-rating">★★★★★ <span>(73 reviews)</span></div>
+                            <p class="product-price">₦ <span class="editable-price">[Price]</span></p>
+                            <button class="btn btn-primary add-to-cart" data-product='{"id":"cake3","name":"Vanilla Rose Romance Cake","price":0}'>Order Custom</button>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <div class="delivery-info">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">🚚</div>
+                        <h3>Fast Delivery</h3>
+                        <p>Same-day delivery available within Lagos</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">✨</div>
+                        <h3>Premium Quality</h3>
+                        <p>Only the finest ingredients and materials</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">💝</div>
+                        <h3>Gift Wrapping</h3>
+                        <p>Elegant packaging for all occasions</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🎨</div>
+                        <h3>Customization</h3>
+                        <p>Personalize your order to perfection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="closeCart" class="close-cart">&times;</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">₦0</span>
+            </div>
+            <button class="btn btn-primary" onclick="window.location.href='contact.html'">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Home of Nuella</h3>
+                    <p>Creating beautiful memories that last forever.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="events.html">Event Decoration</a></li>
+                        <li><a href="surprises.html">Surprise Planning</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Home of Nuella. All rights reserved. Crafted with love ♥</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="./shop.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
